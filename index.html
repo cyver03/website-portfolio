@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyver | Intelligent Automation Portfolio</title>
+<style>
+:root{
+  --bg:#080b12;--panel:#101520;--panel2:#151b28;--text:#f5f7fb;
+  --muted:#8f9aae;--line:#242c3b;--accent:#7c5cff;--green:#20d3a3;
+}
+*{box-sizing:border-box}
+html,body{width:100%;height:100%;margin:0;overflow:hidden}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:radial-gradient(circle at 82% 12%,rgba(124,92,255,.18),transparent 30%),
+             radial-gradient(circle at 12% 90%,rgba(32,211,163,.08),transparent 28%),var(--bg);
+  color:var(--text)
+}
+main{height:100vh;padding:30px 48px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:800;letter-spacing:-.8px}.logo span{color:var(--accent)}
+.status{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:7px 11px;border-radius:999px}
+.status i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:7px}
+.content{width:min(1120px,100%);margin:auto;min-height:0}
+.hero h1{font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-3px;margin:0 0 14px;max-width:900px}
+.hero h1 span{color:var(--accent)}
+.hero p{font-size:15px;color:var(--muted);line-height:1.6;max-width:670px;margin:0 0 28px}.cyver-highlight{color:var(--text);font-weight:800;background:rgba(124,92,255,.16);padding:2px 8px;border-radius:7px}.disabled-card{opacity:.45;cursor:not-allowed;position:relative}.disabled-card:hover{transform:none;border-color:var(--line);background:rgba(16,21,32,.85)}.disabled-card::after{content:"Coming soon";position:absolute;top:15px;right:15px;font-size:9px;color:#7d8798;border:1px solid var(--line);padding:4px 7px;border-radius:999px}.cert{position:relative;padding-right:82px}.cert-status{position:absolute;right:12px;top:12px;display:flex;align-items:center;gap:5px;font-size:9px;color:#687386}.status-dot{width:8px;height:8px;border-radius:50%;background:#687386}.cert.completed .cert-status{color:#20d3a3}.cert.completed .status-dot{background:#20d3a3;box-shadow:0 0 8px rgba(32,211,163,.5)}.cert.completed{border-color:rgba(32,211,163,.35)}
+.section{margin-top:22px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:13px}
+.section-head h2{font-size:15px;margin:0}.section-head small{font-size:11px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.card{border:1px solid var(--line);background:rgba(16,21,32,.85);border-radius:15px;padding:18px;min-height:145px;cursor:pointer;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#414b63;background:var(--panel2)}
+.icon{width:43px;height:43px;border-radius:11px;display:grid;place-items:center;font-size:14px;font-weight:800;margin-bottom:19px}
+.uipath{background:#ff6b6b22;color:#ff7777}.n8n{background:#ff9f4322;color:#ffad5c}.bp{background:#3d8bfd22;color:#72aaff}
+.card h3{font-size:16px;margin:0 0 5px}.card p{font-size:11px;color:var(--muted);margin:0}
+.cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cert{border:1px solid var(--line);background:rgba(16,21,32,.72);border-radius:13px;padding:14px;min-height:88px}
+.cert-number{font-size:10px;color:#a18cff;margin-bottom:10px;font-weight:700}
+.cert strong{font-size:11px;line-height:1.35;display:block}.cert span{display:block;color:var(--muted);font-size:10px;margin-top:5px}
+.footer{margin-top:17px;color:#5d687a;font-size:10px}
+@media(max-width:850px){
+  main{padding:22px}.cards{grid-template-columns:1fr 1fr}.cert-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .cards,.cert-grid{grid-template-columns:1fr}.hero h1{font-size:42px}
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    
+    <div class="status"><i></i>Building & learning</div>
+  </div>
+
+  <div class="content">
+    <section class="hero">
+      <h1>Turning repetitive work into <span>automation.</span></h1>
+      <p><span class="cyver-highlight">I'm Cyver</span> — an RPA developer focused on building practical automations with UiPath, n8n and Blue Prism, while expanding into cloud and AI.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Projects & tools</h2>
+        <small>Click a tool to explore</small>
+      </div>
+      <div class="cards">
+        <a class="card" href="https://hissing-steam-615.notion.site/Cyver-s-UiPath-Project-Portfolio-423f3e28064282f494230176f7702f52?source=copy_link" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">
+          <div class="icon uipath">Ui</div><h3>UiPath</h3><p>RPA · Workflow automation · VB.NET</p>
+        </a>
+        <div class="card disabled-card" aria-disabled="true">
+          <div class="icon n8n">n8n</div><h3>n8n</h3><p>AI workflows · APIs · Integrations</p>
+        </div>
+        <div class="card disabled-card" aria-disabled="true">
+          <div class="icon bp">BP</div><h3>Blue Prism</h3><p>RPA · Process automation · Support</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Certification roadmap</h2>
+        <small>Planned certifications</small>
+      </div>
+      <div class="cert-grid">
+        <div class="cert" data-cert="uipath-associate"><div class="cert-number">01</div><div class="cert-status"><i class="status-dot"></i><span>Planned</span></div><strong>UiPath Automation Developer Associate</strong><span>RPA development</span></div>
+        <div class="cert" data-cert="aws-cloud"><div class="cert-number">02</div><div class="cert-status"><i class="status-dot"></i><span>Planned</span></div><strong>AWS Certified Cloud Practitioner</strong><span>Cloud fundamentals</span></div>
+        <div class="cert" data-cert="aws-ai"><div class="cert-number">03</div><div class="cert-status"><i class="status-dot"></i><span>Planned</span></div><strong>AWS Certified AI Practitioner</strong><span>AI fundamentals</span></div>
+        <div class="cert" data-cert="uipath-professional"><div class="cert-number">04</div><div class="cert-status"><i class="status-dot"></i><span>Planned</span></div><strong>UiPath Automation Developer Professional</strong><span>Advanced RPA development</span></div>
+      </div>
+      <div class="footer">INTELLIGENT AUTOMATION · RPA · CLOUD · AI</div>
+    </section>
+  </div>
+</main>
+
+<script>
+function setCertificateStatus(id, completed) {
+  const card = document.querySelector(`[data-cert="${id}"]`);
+  if (!card) return;
+  card.classList.toggle("completed", completed);
+  const label = card.querySelector(".cert-status span");
+  if (label) label.textContent = completed ? "Completed" : "Planned";
+}
+</script>
+</body>
+</html>
